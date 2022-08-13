@@ -15,57 +15,57 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: 'Outfit', sans-serif;;
+  font-family: 'Outfit', sans-serif;
   background: var(--light-gray);
-  
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+}
+
+.sr-only { 
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+  clip: rect(1px, 1px, 1px, 1px); /*maybe deprecated but we need to support legacy browsers */
+  clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
+  white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
 }
 
 .container {
-  color: #000;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
- }
+ display: flex;
+ justify-content: center;
+ align-items: center;  
+}
+
 
 .card {
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.4);
-  height: 500px;
-  width: 324px;
-  background: var(--white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 10px;
+  max-width: 324px;
   padding: 18px;
-  
+  border-radius: 18px;
+  background: white;
+  text-align: center;
 }
-
 
 img {
-  border-style: none;
-  border-radius: 10px;
   width: 100%;
-  
+  border-radius: 12px;
 }
 
-.card-headline {
-  margin: 10px 24px 15px ;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 700;
+.card h2 {
+  padding: 20px 0;
+  font-weight: bold;
 }
 
-.card-text {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 400;
-  margin: 10px 24px 15px;
-  color: var(--gray-blue);
+.card p {
+  padding-bottom: 10px;
+  color: var(--gray-blue)
 }
-
-

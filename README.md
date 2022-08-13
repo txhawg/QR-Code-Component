@@ -19,7 +19,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Overview
 
-This was a basic, common card component found on many websites.  
+This was a basic, common card component found on many websites.  This is my second attempt.  My first attempt I overcomplicated the code and it wound up sloppy.
 
 ### Screenshot
 
